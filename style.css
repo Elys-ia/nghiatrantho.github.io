@@ -21,14 +21,18 @@ body {
     overflow: hidden;
 }
 
-/* Butterflies nhẹ nhàng ở nền (decor) */
 .hero::before,
 .hero::after {
-    content: "🦋";
+    content: "";
     position: absolute;
-    font-size: 64px;
-    opacity: 0.15;
+    width: 140px;
+    height: 140px;
+    background-image: url("ely1.jpg"); /* dùng đúng tên file */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.18;
 }
+
 
 .hero::before {
     top: 12%;
