@@ -21,16 +21,37 @@ body {
     overflow: hidden;
 }
 
-.hero::before,
-.hero::after {
+.hero::before {
     content: "";
     position: absolute;
-    width: 140px;
-    height: 140px;
-    background-image: url("ely1.jpg"); /* dùng đúng tên file */
+    width: 150px;
+    height: 150px;
+    background-image: url("ely4.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.18;
+
+    /* Vị trí bên trái */
+    top: 12%;
+    left: 8%;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("ely4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.18;
+
+    /* Lật đối xứng */
+    transform: scaleX(-1);
+
+    /* Vị trí bên phải */
+    bottom: 10%;
+    right: 10%;
 }
 
 
