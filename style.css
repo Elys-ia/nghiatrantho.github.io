@@ -1,0 +1,213 @@
+/* Reset đơn giản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #111827;
+    background: #f3f4f6;
+}
+
+/* Hero (phần trên cùng) */
+.hero {
+    background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+    color: #f9fafb;
+    padding: 64px 16px 80px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.subtitle {
+    margin-top: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(249, 250, 251, 0.8);
+    background: transparent;
+    color: #f9fafb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn.primary {
+    background: #f9fafb;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.btn.outline {
+    border-color: rgba(249, 250, 251, 0.7);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
+    background: rgba(249, 250, 251, 0.1);
+}
+
+.btn.primary:hover {
+    background: #e5e7eb;
+}
+
+/* Container & Sections */
+.container {
+    max-width: 900px;
+    margin: -40px auto 40px; /* Nổi lên một chút so với hero */
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+    padding: 24px 20px 32px;
+}
+
+.section {
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+/* Chips (skills) */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.chip {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    font-size: 0.9rem;
+}
+
+/* Cards (projects) */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.card {
+    padding: 16px 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.card ul {
+    margin-left: 18px;
+    margin-bottom: 8px;
+}
+
+.card-link {
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact-list {
+    margin-top: 8px;
+    list-style: none;
+}
+
+.contact-list li + li {
+    margin-top: 4px;
+}
+
+.contact-list a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 12px 0 16px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+    
+/* Responsive */
+@media (min-width: 768px) {
+    .hero {
+        padding: 80px 16px 96px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding: 32px 32px 40px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
