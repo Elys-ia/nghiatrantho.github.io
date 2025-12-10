@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <!-- Kết nối với file CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <!-- ====== PHẦN NÀY BẠN CHỈ CẦN SỬA TEXT ====== -->
+            <h1 class="name">Nghia Tran Tho</h1>
+            <p class="title">Business Analyst & Data Enthusiast</p>
+            <p class="subtitle">
+                I analyze data, build dashboards and help businesses make better decisions.
+            </p>
+            <!-- ============================================= -->
+
+            <div class="hero-buttons">
+                <!-- Sửa link CV, LinkedIn, GitHub tại đây -->
+                <a href="https://nghiatrantho.github.io" class="btn primary" target="_blank">
+                    GitHub
+                </a>
+                <a href="www.linkedin.com/in/nghĩa-trần-thọ-a66413294" class="btn" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="0968084526" class="btn outline">
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2>About me</h2>
+            <p>
+                <!-- Sửa đoạn giới thiệu ngắn tại đây -->
+                I am a student with a strong interest in business analytics, data visualization,
+                and digital marketing performance. I enjoy working with Excel, Python and Power BI
+                to turn raw data into clear insights and actionable recommendations.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="chips">
+                <!-- Thêm / bớt kỹ năng bằng cách thêm / xóa các <span> -->
+                <span class="chip">Excel</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Python</span>
+                <span class="chip">Data Visualization</span>
+                <span class="chip">Business Analysis</span>
+                <span class="chip">Marketing Analytics</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+
+            <div class="cards">
+                <!-- Project 1 -->
+                <article class="card">
+                    <h3>Marketing Campaign Performance Dashboard</h3>
+                    <p>
+                        Built an end-to-end Power BI dashboard to analyze impressions, clicks, CTR,
+                        CPC and budget allocation across multiple advertising campaigns, platforms
+                        and age groups.
+                    </p>
+                    <ul>
+                        <li>Cleaned and merged data from multiple tables into an all-in-one dataset.</li>
+                        <li>Designed measures (CTR, CPC, CPM, distinct users reached, etc.).</li>
+                        <li>Created visual insights to support strategic budget decisions.</li>
+                    </ul>
+                    <!-- Sửa link demo hoặc GitHub ở đây -->
+                    <a href="https://github.com/your-github/your-project" target="_blank" class="card-link">
+                        View project on GitHub
+                    </a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card">
+                    <h3>Supply Chain & Inventory Analysis</h3>
+                    <p>
+                        Developed Excel models for EOQ, ABC analysis and demand forecasting to
+                        support procurement decisions and inventory management.
+                    </p>
+                    <ul>
+                        <li>Implemented EOQ, safety stock and reorder point formulas.</li>
+                        <li>Used ABC classification to focus on high-value items.</li>
+                        <li>Visualized inventory performance and recommendations.</li>
+                    </ul>
+                    <a href="#" class="card-link">
+                        Add link here (GitHub/Drive/Presentation)
+                    </a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="card">
+                    <h3>Python Data Cleaning Scripts</h3>
+                    <p>
+                        Wrote Python scripts to clean, merge and transform raw marketing and
+                        operational datasets into analysis-ready tables.
+                    </p>
+                    <ul>
+                        <li>Used pandas for data cleaning and transformation.</li>
+                        <li>Automated repetitive tasks to save time.</li>
+                        <li>Prepared data for Power BI and Excel dashboards.</li>
+                    </ul>
+                    <a href="#" class="card-link">
+                        Add link here (GitHub repo)
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>
+                <!-- Sửa email / thông tin liên hệ tại đây -->
+                Feel free to reach out if you want to talk about data, analytics, internships or
+                collaboration opportunities.
+            </p>
+            <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+        Feel free to reach out if you want to talk about data, analytics, internships or
+        collaboration opportunities.
+    </p>
+
+    <ul class="contact-list">
+
+        <li>
+            Email:
+            <a href="mailto:nghiatrantho309@gmail.com">
+                nghiatrantho309@gmail.com
+            </a>
+        </li>
+        <li>
+            GitHub:
+            <a href="https://github.com/Elys-ia" target="_blank">
+                github.com/Elys-ia
+            </a>
+        </li>
+        <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/nghĩa-trần-thọ-a66413294" target="_blank">
+                www.linkedin.com/in/nghĩa-trần-thọ-a66413294
+            </a>
+        </li>
+    </ul>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Trần Thọ Nghĩa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Tự động cập nhật năm hiện tại ở footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
